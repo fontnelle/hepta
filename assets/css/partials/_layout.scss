@@ -1,0 +1,135 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    height: 93vh;
+    margin: 0 auto;
+    padding: 36px 16px;
+}
+
+.container-item-1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 576px;
+    p {
+        margin-bottom: 32px;
+    }
+    svg {
+        margin: 0 auto;
+    }
+}
+
+.container-item-2 {
+    border: 1px solid greenyellow;
+}
+
+.depoimentos {
+    padding: 40px 40px;
+    background: linear-gradient(108.62deg, #DFEEF0 3.54%, #E7F0F1 91.92%);
+}
+
+.depoimentos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 36px 16px;
+}
+
+.depoimentos-item-1 {
+    display: flex;
+    min-width: 560px;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px 24px;
+    margin: 32px 0;
+    width: 540px;
+    background: #FAFAFA;
+    box-shadow: 0px 12px 148px rgba(0, 121, 133, 0.07), 0px 4.3802px 54.0224px rgba(0, 121, 133, 0.0482987), 0px 2.1265px 26.2269px rgba(0, 121, 133, 0.0389404), 0px 1.04245px 12.8569px rgba(0, 121, 133, 0.0310596), 0px 0.412187px 5.08364px rgba(0, 121, 133, 0.0217013);
+    border-radius: 10px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: row;
+    svg {
+        width: 40%;
+        padding: 0 8px;
+        path {
+            fill: $yellow;
+        }
+    }
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 6px;
+    img {
+        padding-right: 16px;
+    }
+    .foto {}
+    .nome {
+        span {
+            color: $yellow;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+        }
+    }
+}
+
+.card-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgba(0, 134, 147, 0.1);
+    border-radius: 6px;
+    color: $blue;
+    cursor: pointer;
+    transition: .6s ease;
+    svg {
+        path {
+            fill: $blue;
+        }
+    }
+    a {
+        font-family: 'Source Sans Pro', sans-serif;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        padding-left: 8px;
+        font-size: 18px;
+        color: #008693;
+    }
+    &:hover {
+        background: $blue;
+        svg {
+            path {
+                fill: #fafafa;
+            }
+        }
+        a {
+            color: #fafafa;
+        }
+    }
+}
+
+.depoimentos-item-2 {
+    display: flex;
+    min-width: 560px;
+    flex-direction: column;
+    max-width: 576px;
+}

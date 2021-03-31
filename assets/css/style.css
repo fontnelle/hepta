@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #003241;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 85px;
+  line-height: 88px;
+  margin-bottom: 32px;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #003241;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #003241;
+}
+
+.depoimento {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #98B2BF;
+}
+
+h5 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #003241;
+}
+
+h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 48px;
+  color: #003241;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(321.95deg, #008693 -20.16%, rgba(223, 238, 239, 0.29) 58.35%);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1440px;
+  height: 93vh;
+  margin: 0 auto;
+  padding: 36px 16px;
+}
+
+.container-item-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 576px;
+}
+
+.container-item-1 p {
+  margin-bottom: 32px;
+}
+
+.container-item-1 svg {
+  margin: 0 auto;
+}
+
+.container-item-2 {
+  border: 1px solid greenyellow;
+}
+
+.depoimentos {
+  padding: 40px 40px;
+  background: linear-gradient(108.62deg, #DFEEF0 3.54%, #E7F0F1 91.92%);
+}
+
+.depoimentos-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 36px 16px;
+}
+
+.depoimentos-item-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 560px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 24px 24px;
+  margin: 32px 0;
+  width: 540px;
+  background: #FAFAFA;
+  -webkit-box-shadow: 0px 12px 148px rgba(0, 121, 133, 0.07), 0px 4.3802px 54.0224px rgba(0, 121, 133, 0.0482987), 0px 2.1265px 26.2269px rgba(0, 121, 133, 0.0389404), 0px 1.04245px 12.8569px rgba(0, 121, 133, 0.0310596), 0px 0.41219px 5.08364px rgba(0, 121, 133, 0.0217013);
+          box-shadow: 0px 12px 148px rgba(0, 121, 133, 0.07), 0px 4.3802px 54.0224px rgba(0, 121, 133, 0.0482987), 0px 2.1265px 26.2269px rgba(0, 121, 133, 0.0389404), 0px 1.04245px 12.8569px rgba(0, 121, 133, 0.0310596), 0px 0.41219px 5.08364px rgba(0, 121, 133, 0.0217013);
+  border-radius: 10px;
+}
+
+.card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card-text svg {
+  width: 40%;
+  padding: 0 8px;
+}
+
+.card-text svg path {
+  fill: #FFC400;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 24px 6px;
+}
+
+.card-footer img {
+  padding-right: 16px;
+}
+
+.card-footer .nome span {
+  color: #FFC400;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.card-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: rgba(0, 134, 147, 0.1);
+  border-radius: 6px;
+  color: #008693;
+  cursor: pointer;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.card-link svg path {
+  fill: #008693;
+}
+
+.card-link a {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  padding-left: 8px;
+  font-size: 18px;
+  color: #008693;
+}
+
+.card-link:hover {
+  background: #008693;
+}
+
+.card-link:hover svg path {
+  fill: #fafafa;
+}
+
+.card-link:hover a {
+  color: #fafafa;
+}
+
+.depoimentos-item-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 560px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 576px;
+}
+
+header {
+  width: 100%;
+  padding-top: 16px;
+}
+
+.navbar {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-list li {
+  margin-left: 24px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #008693;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100px;
+  top: 40px;
+  height: 5px;
+  width: 0%;
+  opacity: 0;
+  background: #003241;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.nav-link:hover {
+  color: #003241;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.nav-link:hover::before {
+  width: 40%;
+  opacity: 1;
+}
+
+.btn-ca {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #008693;
+  padding: 8px 16px;
+  margin-right: 16px;
+  text-decoration: none;
+  color: #fafafa;
+  border-radius: 6px;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.btn-ca:hover {
+  background: #DB1826;
+}
+
+.nav-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-social svg {
+  margin-right: 8px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.nav-social svg path {
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.nav-social svg:hover path {
+  fill: #DB1826;
+}
+/*# sourceMappingURL=style.css.map */
