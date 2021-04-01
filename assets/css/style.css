@@ -105,6 +105,16 @@ body {
   max-width: 740px;
 }
 
+.container-item-1 h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 85px;
+  line-height: 20px;
+  color: #003241;
+  margin-bottom: 64px;
+}
+
 .container-item-1 p {
   margin-bottom: 32px;
 }
@@ -139,7 +149,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1440px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 36px 16px;
 }
@@ -601,6 +611,98 @@ body {
           transform: translate3d(0, -10px, 0);
   -webkit-box-shadow: 0px 17px 29px rgba(219, 24, 38, 0.47), 0px 2.12866px 3.63125px rgba(219, 24, 38, 0.235);
           box-shadow: 0px 17px 29px rgba(219, 24, 38, 0.47), 0px 2.12866px 3.63125px rgba(219, 24, 38, 0.235);
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: content;
+      -ms-flex-align: content;
+          align-items: content;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 40px 40px;
+  background: #fafafa;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-item {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #008693;
+  border-radius: 100px;
+}
+
+.footer-item p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FAFAFA;
+}
+
+.footer-item p a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.footer-item p a::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: linear-gradient(269deg, #FFC400 0.77%, rgba(255, 196, 0, 0) 50.71%);
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+  border-radius: 100px;
+  opacity: 0;
+}
+
+.footer-item p a:hover {
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.footer-item p a:hover::after {
+  opacity: 1;
+  width: 486px;
 }
 
 .bg-loader {

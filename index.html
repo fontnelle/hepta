@@ -8,7 +8,7 @@
     <title>Hepta - Soluções Digitais | 29 anos </title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="assets/js/svg-inject.min.js"></script>
 
 </head>
@@ -49,9 +49,9 @@
             </div>
             <div class="nav-social">
                 <ul class="nav-list">
-                    <li><a href="" class="nav-link ani1">Comentários</a></li>
-                    <li><a href="" class="nav-link ani2">Demoimentos</a></li>
-                    <li><a href="" class="nav-link ani3">Jeito Hepta</a></li>
+                    <li><a href="#comentarios" class="nav-link ani1">Comentários</a></li>
+                    <li><a href="#depoimentos" class="nav-link ani2">Depoimentos</a></li>
+                    <li><a href="#jeitohepta" class="nav-link ani3">Jeito Hepta</a></li>
                     <li><a href="" class="btn-ca ani4">Vamos Conversar?</a></li>
                 </ul>
                 <div class="ani5">
@@ -65,7 +65,8 @@
         <!--======== CONTAINER ===========-->
         <section class="container">
             <div class="container-item-1 ani6">
-                <h1>29 anos de <br> <span>soluções</span></h1>
+                <h1>29 anos de</h1>
+                <h2>soluções</h2>
                 <p>Muitas pessoas fizeram parte, de alguma forma, dessa história. Esse espaço reúne um pouco doque elas têm pra contar. </p>
                 <img src="assets/img/mouse.svg" onload="SVGInject(this)" />
             </div>
@@ -84,14 +85,14 @@
     </header>
 
     <!-- DEPOIMENTOS EM TEXTO -->
-    <section class="depoimentos">
+    <section id="comentarios" class="depoimentos">
         <div class="depoimentos-container">
             <div class="depoimentos-item-1">
-                <h6>Depoimentos</h6>
-                <h2>O que ouvimos ao <br>longo dos anos</h2>
+                <h6 data-aos="fade-up">Depoimentos</h6>
+                <h2 data-aos="fade-up">O que ouvimos ao <br>longo dos anos</h2>
 
                 <!-- 1 CARD DEPOIMENTO    -->
-                <div class="card">
+                <div data-aos="fade-right" data-aos-duration="2000" class="card">
                     <div class="card-text">
                         <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
                         <p class="depoimento">Sou muito grata a Deus é a empresa Hepta pelo apoio 👏 Meu crescimento no esporte se deve ao seu apoio e as oportunidades que a empresa vem me proporcionando! 🙏 Tenho maior orgulho de carregar o nome da empresa no meu ❤️❤️❤️❤️</p>
@@ -112,7 +113,7 @@
                 </div>
 
                 <!-- 2 CARD DEPOIMENTO -->
-                <div class="card">
+                <div data-aos="fade-right" data-aos-duration="2000" class="card">
                     <div class="card-text">
                         <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
                         <p class="depoimento">Obrigado por me acolherem tão bem @heptatecnologia, vocês são incríveis! Muito feliz por faer parte dessa família ❤️ #valoreshepta #jeitohepta</p>
@@ -133,7 +134,7 @@
                 </div>
 
                 <!-- 3 CARD DEPOIMENTO -->
-                <div class="card final">
+                <div data-aos="fade-right" data-aos-duration="2000" class="card final">
                     <div class="card-text">
                         <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
                         <p class="depoimento">#JeitoHepta estimulando a cooperção, o diálogo propositivo e as relações interpsessoais.
@@ -157,7 +158,7 @@
 
             <!-- COLUNA DA DIREITA -->
             <div class="depoimentos-item-2">
-                <div class="card">
+                <div data-aos="fade-left" data-aos-duration="1000" class="card">
                     <div class="card-text">
                         <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
                         <p class="depoimento">Empresa que presta ótimo serviço. Possui uma visão de negócios única. Recomendo a qualquer um que me perguntar!</p>
@@ -177,7 +178,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div data-aos="fade-left" data-aos-duration="1000" class="card">
                     <div class="card-text">
                         <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
                         <p class="depoimento">Vocês conhecem pessoas que esperam o final do dia de uma sexta-feira para serem felizes? Pois é, nós da Hepta somos felizes de segunda a segunda, afinal, a vida acontece diariamente e a felicidade é uma escolha e, este jeito de
@@ -198,7 +199,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div data-aos="fade-left" data-aos-duration="1000" class="card">
                     <div class="card-text">
                         <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
                         <p class="depoimento">Ótima empresa, com foco na qualidade!
@@ -223,9 +224,9 @@
     </section>
 
 
-    <section class="video">
+    <section id="depoimentos" class="video">
         <div class="video-container">
-            <div class="video-item-1">
+            <div data-aos="fade-up" class="video-item-1">
                 <h6>Depoimentos</h6>
                 <h2>O que as pessoas<br> têm a dizer?</h2>
                 <p>Não é todo dia, nem é toda empresa que completa 29 anos e a Hepta alcançou esse marco em 2021. São quase 30 anos de história e, mais do que falar sobre dados e fatos, queremos ouvir as pessoas e o que elas têm a dizer sobre sua experiência
@@ -234,12 +235,12 @@
             </div>
 
 
-            <div class="orbita-elemento">
+            <div data-aos="fade-down" data-aos-delay="300" class="orbita-elemento">
                 <img src="assets/img/elementos-depoimento.svg" onload="SVGInject(this)" />
             </div>
 
             <div class="video-item-2">
-                <div class="usuarios">
+                <div data-aos="fade-down" data-aos-delay="600" class="usuarios">
                     <div class="user1">
                         <a href="https://www.youtube.com/watch?v=6t_dYhXyYjI" data-fancybox><img src="assets/img/feminino.svg" onload="SVGInject(this)" /></a>
                     </div>
@@ -263,18 +264,27 @@
     </section>
 
 
-    <section class="jeitohepta">
-        <div class="jeitohepta-container">
+    <section id="jeitohepta" class="jeitohepta">
+        <div data-aos="fade-left" data-aos-delay="300" class="jeitohepta-container">
             <div class="jeitohepta-item-1">
                 <img class="mulher" src="assets/img/mulher.png" alt="mulher jeito hepta">
             </div>
-            <div class="jeitohepta-item-2">
+            <div data-aos="fade-down" data-aos-delay="300" class="jeitohepta-item-2">
                 <span>#jeitohepta</span>
                 <h2>Queremos levar o #JeitoHepta <br> para todo o Brasil e o mundo!</h2>
                 <p>Mais do que prestar serviços de TI, nossa missão é entregar soluções que agreguem valor aos negócios de nossos clientes. Estamos há 29 anos no mercado: escutando e entendendo as necessidades das pessoas, e daí desenhamos soluções que façam
                     sentido para elas.</p>
-
                 <button class="bnt-red">Vamos conversar?</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-item">
+                <img src="assets/img/logo-hepta-branca.svg" onload="SVGInject(this)" />
+                <p>Esta página está em conformidade com a LGPD | <a href="#">Política de Privacidade.</a></p>
             </div>
         </div>
     </section>
@@ -284,6 +294,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Javascript -->
+    <script src="assets/js/smooth-scroll.polyfills.js"></script>
+    <script>
+        // Instantiate Scrolls
+        var scroll = new SmoothScroll('a[href*="#"]:not([data-easing])');
+
+        if (document.querySelector('[data-easing]')) {
+            var linear = new SmoothScroll('[data-easing="linear"]', {
+                easing: 'linear'
+            });
+            var easeInQuart = new SmoothScroll('[data-easing="easeInQuart"]', {
+                easing: 'easeInQuart'
+            });
+            var easeInQuint = new SmoothScroll('[data-easing="easeInQuint"]', {
+                easing: 'easeInQuint'
+            });
+
+
+        }
+    </script>
+
+
+
+    <script>
+        AOS.init();
+    </script>
+
     <script>
         $('.js-tilt').tilt({
             perspective: 2200,
