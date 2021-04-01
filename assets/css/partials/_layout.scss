@@ -13,14 +13,8 @@
     display: flex;
     flex-direction: column;
     max-width: 740px;
-    h2 {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 85px;
-        line-height: 20px;
-        color: #003241;
-        margin-bottom: 64px;
+    h1 {
+        margin-bottom: 8px;
     }
     p {
         margin-bottom: 32px;
@@ -58,7 +52,7 @@
 
 .depoimentos-item-1 {
     display: flex;
-    min-width: 560px;
+    min-width: 580px;
     flex-direction: column;
 }
 
@@ -116,6 +110,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 40px;
     background: rgba(0, 134, 147, 0.1);
     border-radius: 6px;
     color: $blue;
@@ -125,15 +120,17 @@
         path {
             fill: $blue;
         }
+        margin-top: 1px;
+        margin-right: 8px;
     }
     a {
         font-family: 'Source Sans Pro', sans-serif;
         text-decoration: none;
         font-style: normal;
         font-weight: normal;
-        padding-left: 8px;
         font-size: 18px;
         color: #008693;
+        text-transform: uppercase;
     }
     &:hover {
         background: $blue;
@@ -157,8 +154,7 @@
 
 .video {
     display: flex;
-    align-items: content;
-    align-items: flex-end;
+    align-items: center;
     padding: 40px 40px;
     background: #fafafa;
     position: relative;
@@ -177,7 +173,7 @@
 .video-item-1 {
     width: 600px;
     h2 {
-        margin-bottom: 32px;
+        margin-bottom: 64px;
     }
 }
 
@@ -202,29 +198,31 @@
             left: 168px;
             transition: .6s ease;
             &::after {
-                content: 'Silvia Maria';
+                content: 'Bruno Silveira';
                 text-align: center;
                 display: block;
                 width: 140px;
                 height: 30px;
                 padding: 4px 0;
                 left: -50px;
+                margin: -40px;
+                margin-top: 5px;
                 border-radius: 100px;
-                background: $red;
+                background: $blue;
                 transition: .6s ease;
-                opacity: 0;
+                opacity: 1;
             }
             &:hover {
                 transition: .6s ease;
                 &::after {
-                    content: 'Silvia Maria';
+                    content: 'Bruno Silveira';
                     text-align: center;
                     display: block;
                     width: 140px;
                     height: 30px;
                     padding: 4px 0;
                     border-radius: 100px;
-                    background: $red;
+                    background: $blue;
                     transition: .6s ease;
                     opacity: 1;
                 }
@@ -236,23 +234,25 @@
             left: 60px;
             transition: .6s ease;
             &::after {
-                content: 'João Henrique';
+                content: 'Emanuel Di Matteo';
                 text-align: center;
                 display: block;
                 width: 140px;
                 height: 30px;
                 padding: 4px 0;
                 left: -50px;
+                margin: -40px;
+                margin-top: 5px;
                 border-radius: 100px;
                 background: $yellow;
                 color: $blue-dark;
                 transition: .6s ease;
-                opacity: 0;
+                opacity: 1;
             }
             &:hover {
                 transition: .6s ease;
                 &::after {
-                    content: 'João Henrique';
+                    content: 'Emanuel Di Matteo';
                     text-align: center;
                     display: block;
                     width: 140px;
@@ -272,26 +272,28 @@
             left: 480px;
             transition: .6s ease;
             &::after {
-                content: 'João Henrique';
+                content: 'Eustáquio Guimarães';
                 text-align: center;
                 display: block;
-                width: 140px;
+                width: 160px;
                 height: 30px;
                 padding: 4px 0;
                 left: -50px;
+                margin: -40px;
+                margin-top: 5px;
                 border-radius: 100px;
                 background: $blue;
                 color: $blue-dark;
                 transition: .6s ease;
-                opacity: 0;
+                opacity: 1;
             }
             &:hover {
                 transition: .6s ease;
                 &::after {
-                    content: 'João Henrique';
+                    content: 'Eustáquio Guimarães';
                     text-align: center;
                     display: block;
-                    width: 140px;
+                    width: 160px;
                     height: 30px;
                     padding: 4px 0;
                     border-radius: 100px;
@@ -308,23 +310,63 @@
             left: 540px;
             transition: .6s ease;
             &::after {
-                content: 'Rafael Miranda';
+                content: 'Francisco Junior';
                 text-align: center;
                 display: block;
                 width: 140px;
                 height: 30px;
                 padding: 4px 0;
                 left: -50px;
+                margin: -40px;
+                margin-top: 5px;
                 border-radius: 100px;
-                background: $yellow;
+                background: $red;
                 color: $blue-dark;
                 transition: .6s ease;
-                opacity: 0;
+                opacity: 1;
             }
             &:hover {
                 transition: .6s ease;
                 &::after {
-                    content: 'Rafael Miranda';
+                    content: 'Francisco Junior';
+                    text-align: center;
+                    display: block;
+                    width: 140px;
+                    height: 30px;
+                    padding: 4px 0;
+                    border-radius: 100px;
+                    background: $red;
+                    color: $blue-dark;
+                    transition: .6s ease;
+                    opacity: 1;
+                }
+            }
+        }
+        .user5 {
+            position: absolute;
+            top: 280px;
+            left: 580px;
+            transition: .6s ease;
+            &::after {
+                content: 'Gilberto Uchoa';
+                text-align: center;
+                display: block;
+                width: 140px;
+                height: 30px;
+                padding: 4px 0;
+                left: -50px;
+                margin: -40px;
+                margin-top: 5px;
+                border-radius: 100px;
+                background: $yellow;
+                color: $blue-dark;
+                transition: .6s ease;
+                opacity: 1;
+            }
+            &:hover {
+                transition: .6s ease;
+                &::after {
+                    content: 'Gilberto Uchoa';
                     text-align: center;
                     display: block;
                     width: 140px;

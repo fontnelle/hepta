@@ -105,14 +105,8 @@ body {
   max-width: 740px;
 }
 
-.container-item-1 h2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 85px;
-  line-height: 20px;
-  color: #003241;
-  margin-bottom: 64px;
+.container-item-1 h1 {
+  margin-bottom: 8px;
 }
 
 .container-item-1 p {
@@ -158,7 +152,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 560px;
+  min-width: 580px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -247,12 +241,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  height: 40px;
   background: rgba(0, 134, 147, 0.1);
   border-radius: 6px;
   color: #008693;
   cursor: pointer;
   -webkit-transition: .6s ease;
   transition: .6s ease;
+}
+
+.card-link svg {
+  margin-top: 1px;
+  margin-right: 8px;
 }
 
 .card-link svg path {
@@ -264,9 +264,9 @@ body {
   text-decoration: none;
   font-style: normal;
   font-weight: normal;
-  padding-left: 8px;
   font-size: 18px;
   color: #008693;
+  text-transform: uppercase;
 }
 
 .card-link:hover {
@@ -297,12 +297,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: content;
-      -ms-flex-align: content;
-          align-items: content;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 40px 40px;
   background: #fafafa;
   position: relative;
@@ -330,7 +327,7 @@ body {
 }
 
 .video-item-1 h2 {
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 
 .orbita-elemento {
@@ -360,18 +357,20 @@ body {
 }
 
 .video-item-2 .usuarios .user1::after {
-  content: 'Silvia Maria';
+  content: 'Bruno Silveira';
   text-align: center;
   display: block;
   width: 140px;
   height: 30px;
   padding: 4px 0;
   left: -50px;
+  margin: -40px;
+  margin-top: 5px;
   border-radius: 100px;
-  background: #DB1826;
+  background: #008693;
   -webkit-transition: .6s ease;
   transition: .6s ease;
-  opacity: 0;
+  opacity: 1;
 }
 
 .video-item-2 .usuarios .user1:hover {
@@ -380,14 +379,14 @@ body {
 }
 
 .video-item-2 .usuarios .user1:hover::after {
-  content: 'Silvia Maria';
+  content: 'Bruno Silveira';
   text-align: center;
   display: block;
   width: 140px;
   height: 30px;
   padding: 4px 0;
   border-radius: 100px;
-  background: #DB1826;
+  background: #008693;
   -webkit-transition: .6s ease;
   transition: .6s ease;
   opacity: 1;
@@ -402,19 +401,21 @@ body {
 }
 
 .video-item-2 .usuarios .user2::after {
-  content: 'João Henrique';
+  content: 'Emanuel Di Matteo';
   text-align: center;
   display: block;
   width: 140px;
   height: 30px;
   padding: 4px 0;
   left: -50px;
+  margin: -40px;
+  margin-top: 5px;
   border-radius: 100px;
   background: #FFC400;
   color: #003241;
   -webkit-transition: .6s ease;
   transition: .6s ease;
-  opacity: 0;
+  opacity: 1;
 }
 
 .video-item-2 .usuarios .user2:hover {
@@ -423,7 +424,7 @@ body {
 }
 
 .video-item-2 .usuarios .user2:hover::after {
-  content: 'João Henrique';
+  content: 'Emanuel Di Matteo';
   text-align: center;
   display: block;
   width: 140px;
@@ -446,19 +447,21 @@ body {
 }
 
 .video-item-2 .usuarios .user3::after {
-  content: 'João Henrique';
+  content: 'Eustáquio Guimarães';
   text-align: center;
   display: block;
-  width: 140px;
+  width: 160px;
   height: 30px;
   padding: 4px 0;
   left: -50px;
+  margin: -40px;
+  margin-top: 5px;
   border-radius: 100px;
   background: #008693;
   color: #003241;
   -webkit-transition: .6s ease;
   transition: .6s ease;
-  opacity: 0;
+  opacity: 1;
 }
 
 .video-item-2 .usuarios .user3:hover {
@@ -467,10 +470,10 @@ body {
 }
 
 .video-item-2 .usuarios .user3:hover::after {
-  content: 'João Henrique';
+  content: 'Eustáquio Guimarães';
   text-align: center;
   display: block;
-  width: 140px;
+  width: 160px;
   height: 30px;
   padding: 4px 0;
   border-radius: 100px;
@@ -490,19 +493,21 @@ body {
 }
 
 .video-item-2 .usuarios .user4::after {
-  content: 'Rafael Miranda';
+  content: 'Francisco Junior';
   text-align: center;
   display: block;
   width: 140px;
   height: 30px;
   padding: 4px 0;
   left: -50px;
+  margin: -40px;
+  margin-top: 5px;
   border-radius: 100px;
-  background: #FFC400;
+  background: #DB1826;
   color: #003241;
   -webkit-transition: .6s ease;
   transition: .6s ease;
-  opacity: 0;
+  opacity: 1;
 }
 
 .video-item-2 .usuarios .user4:hover {
@@ -511,7 +516,53 @@ body {
 }
 
 .video-item-2 .usuarios .user4:hover::after {
-  content: 'Rafael Miranda';
+  content: 'Francisco Junior';
+  text-align: center;
+  display: block;
+  width: 140px;
+  height: 30px;
+  padding: 4px 0;
+  border-radius: 100px;
+  background: #DB1826;
+  color: #003241;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+  opacity: 1;
+}
+
+.video-item-2 .usuarios .user5 {
+  position: absolute;
+  top: 280px;
+  left: 580px;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.video-item-2 .usuarios .user5::after {
+  content: 'Gilberto Uchoa';
+  text-align: center;
+  display: block;
+  width: 140px;
+  height: 30px;
+  padding: 4px 0;
+  left: -50px;
+  margin: -40px;
+  margin-top: 5px;
+  border-radius: 100px;
+  background: #FFC400;
+  color: #003241;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+  opacity: 1;
+}
+
+.video-item-2 .usuarios .user5:hover {
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.video-item-2 .usuarios .user5:hover::after {
+  content: 'Gilberto Uchoa';
   text-align: center;
   display: block;
   width: 140px;
@@ -1081,8 +1132,98 @@ header {
 .user1,
 .user2,
 .user3,
-.user4 {
+.user4,
+.user5,
+.user6,
+.user {
   -webkit-animation: flutuar 6s ease-out infinite alternate;
           animation: flutuar 6s ease-out infinite alternate;
+}
+
+.contenedor {
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  height: 85px;
+  color: #003241;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 85px;
+  line-height: 85px;
+  overflow: hidden;
+}
+
+.contenedor ul {
+  list-style: none;
+  -webkit-animation: cambiar 7s infinite;
+          animation: cambiar 7s infinite;
+}
+
+.contenedor ul,
+.contenedor p {
+  margin: 0;
+}
+
+@-webkit-keyframes cambiar {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -90PX;
+  }
+  50% {
+    margin-top: -90PX;
+  }
+  55% {
+    margin-top: -180PX;
+  }
+  80% {
+    margin-top: -180PX;
+  }
+  85% {
+    margin-top: -90PX;
+  }
+  95% {
+    margin-top: -90PX;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes cambiar {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -90PX;
+  }
+  50% {
+    margin-top: -90PX;
+  }
+  55% {
+    margin-top: -180PX;
+  }
+  80% {
+    margin-top: -180PX;
+  }
+  85% {
+    margin-top: -90PX;
+  }
+  95% {
+    margin-top: -90PX;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

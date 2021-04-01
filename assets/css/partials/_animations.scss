@@ -97,6 +97,62 @@
 .user1,
 .user2,
 .user3,
-.user4 {
+.user4,
+.user5,
+.user6,
+.user {
     animation: flutuar 6s ease-out infinite alternate;
+}
+
+.contenedor {
+    margin-bottom: 32px;
+    display: flex;
+    width: 800px;
+    height: 85px;
+    color: #003241;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 85px;
+    line-height: 85px;
+    overflow: hidden;
+    // border: 1px solid hotpink;
+    ul {
+        list-style: none;
+        animation: cambiar 7s infinite;
+    }
+    ul,
+    p {
+        margin: 0;
+    }
+}
+
+@keyframes cambiar {
+    0% {
+        margin-top: 0;
+    }
+    20% {
+        margin-top: 0;
+    }
+    25% {
+        margin-top: -90PX;
+    }
+    50% {
+        margin-top: -90PX;
+    }
+    55% {
+        margin-top: -180PX;
+    }
+    80% {
+        margin-top: -180PX;
+    }
+    85% {
+        margin-top: -90PX;
+    }
+    95% {
+        margin-top: -90PX;
+    }
+    100% {
+        margin-top: 0;
+    }
 }
