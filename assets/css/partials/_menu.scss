@@ -30,6 +30,7 @@ header {
     display: inline-block;
     padding: 8px 16px;
     font-size: 16px;
+    margin-top: 6px;
     letter-spacing: 1px;
     color: $blue;
     text-transform: uppercase;
@@ -42,7 +43,7 @@ header {
         border-radius: 100px;
         top: 40px;
         height: 5px;
-        width: 0%;
+        width: 0px;
         opacity: 0;
         background: $blue-dark;
         transition: .6s ease;
@@ -60,14 +61,31 @@ header {
 .btn-ca {
     display: flex;
     background: $blue;
-    padding: 8px 16px;
-    margin-right: 16px;
+    padding: 16px 24px;
+    margin-right: 32px;
     text-decoration: none;
     color: #fafafa;
     border-radius: 6px;
     transition: .6s ease;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0px;
+        height: 5px;
+        border-radius: 100px;
+        top: 60px;
+        background: $red;
+        transition: .6s ease;
+        opacity: 0;
+    }
     &:hover {
         background: $red;
+        transition: .6s ease;
+        &::before {
+            width: 124px;
+            opacity: 1;
+        }
     }
 }
 
