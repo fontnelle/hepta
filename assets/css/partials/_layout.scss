@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 1440px;
+    max-width: 1140px;
     height: 93vh;
     margin: 0 auto;
     padding: 36px 16px;
@@ -12,27 +12,23 @@
 .container-item-1 {
     display: flex;
     flex-direction: column;
-    max-width: 740px;
+    max-width: 40%;
     h1 {
         margin-bottom: 8px;
     }
     p {
         margin-bottom: 32px;
     }
-    svg {
-        margin: 0 auto;
-    }
 }
 
 .container-item-2 {
-    img {
-        width: 100%;
-    }
+    z-index: 999;
+    transition: .5s ease;
 }
 
 .elementos {
     position: absolute;
-    left: 1170px;
+    left: 810px;
 }
 
 .depoimentos {
@@ -165,34 +161,31 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 80px;
-    max-width: 1440px;
+    max-width: 1140px;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .video-item-1 {
-    width: 600px;
+    max-width: 480px;
     h2 {
         margin-bottom: 64px;
     }
 }
 
-.orbita-elemento {
-    position: absolute;
-    left: 850px;
-    top: 20px;
-    z-index: 999;
-}
-
 .video-item-2 {
-    .orbita {
-        width: 130%;
-        transform: translate3d(-100px, -100px, 0);
+    max-width: 770px;
+    transform: translate3d(200px, -60px, 0);
+    .orbita-elemento {
+        position: absolute;
+        right: 110px;
+        top: -70px;
     }
     .usuarios {
-        position: relative;
+        position: absolute;
         z-index: 999;
         .user1 {
+            max-width: 64px;
+            max-height: 64px;
             position: absolute;
             top: -30px;
             left: 168px;
@@ -209,29 +202,25 @@
                 margin-top: 5px;
                 border-radius: 100px;
                 background: $blue;
+                color: $blue-dark;
                 transition: .6s ease;
                 opacity: 1;
+                border: 1px solid $blue-dark;
             }
             &:hover {
                 transition: .6s ease;
                 &::after {
-                    content: 'Bruno Silveira';
-                    text-align: center;
-                    display: block;
-                    width: 140px;
-                    height: 30px;
-                    padding: 4px 0;
-                    border-radius: 100px;
-                    background: $blue;
-                    transition: .6s ease;
-                    opacity: 1;
+                    background-color: $red;
+                    box-shadow: 0px 4px 55px rgba(219, 24, 38, 0.35), 0px 1.20588px 16.5809px rgba(219, 24, 38, 0.228056), 0px 0.500862px 6.88685px rgba(219, 24, 38, 0.175), 0px 0.181152px 2.49084px rgba(219, 24, 38, 0.121944);
                 }
             }
         }
         .user2 {
+            max-width: 64px;
+            max-height: 64px;
             position: absolute;
-            top: 330px;
-            left: 60px;
+            top: 280px;
+            left: -50px;
             transition: .6s ease;
             &::after {
                 content: 'Emanuel Di Matteo';
@@ -248,28 +237,22 @@
                 color: $blue-dark;
                 transition: .6s ease;
                 opacity: 1;
+                border: 1px solid $yellow-dark;
             }
             &:hover {
                 transition: .6s ease;
                 &::after {
-                    content: 'Emanuel Di Matteo';
-                    text-align: center;
-                    display: block;
-                    width: 140px;
-                    height: 30px;
-                    padding: 4px 0;
-                    border-radius: 100px;
-                    background: $yellow;
-                    color: $blue-dark;
-                    transition: .6s ease;
-                    opacity: 1;
+                    background-color: $red;
+                    box-shadow: 0px 4px 55px rgba(219, 24, 38, 0.35), 0px 1.20588px 16.5809px rgba(219, 24, 38, 0.228056), 0px 0.500862px 6.88685px rgba(219, 24, 38, 0.175), 0px 0.181152px 2.49084px rgba(219, 24, 38, 0.121944);
                 }
             }
         }
         .user3 {
+            max-width: 64px;
+            max-height: 64px;
             position: absolute;
-            top: 450px;
-            left: 480px;
+            top: 410px;
+            left: 440px;
             transition: .6s ease;
             &::after {
                 content: 'Eustáquio Guimarães';
@@ -278,7 +261,7 @@
                 width: 160px;
                 height: 30px;
                 padding: 4px 0;
-                left: -50px;
+                left: -40px;
                 margin: -40px;
                 margin-top: 5px;
                 border-radius: 100px;
@@ -286,75 +269,31 @@
                 color: $blue-dark;
                 transition: .6s ease;
                 opacity: 1;
+                border: 1px solid $blue-dark;
             }
             &:hover {
                 transition: .6s ease;
                 &::after {
-                    content: 'Eustáquio Guimarães';
-                    text-align: center;
-                    display: block;
-                    width: 160px;
-                    height: 30px;
-                    padding: 4px 0;
-                    border-radius: 100px;
-                    background: $blue;
-                    color: $blue-dark;
-                    transition: .6s ease;
-                    opacity: 1;
+                    background-color: $red;
+                    box-shadow: 0px 4px 55px rgba(219, 24, 38, 0.35), 0px 1.20588px 16.5809px rgba(219, 24, 38, 0.228056), 0px 0.500862px 6.88685px rgba(219, 24, 38, 0.175), 0px 0.181152px 2.49084px rgba(219, 24, 38, 0.121944);
                 }
             }
         }
         .user4 {
+            max-width: 64px;
+            max-height: 64px;
             position: absolute;
             top: 25px;
-            left: 540px;
+            left: 440px;
             transition: .6s ease;
             &::after {
                 content: 'Francisco Junior';
                 text-align: center;
                 display: block;
-                width: 140px;
+                width: 160px;
                 height: 30px;
                 padding: 4px 0;
-                left: -50px;
-                margin: -40px;
-                margin-top: 5px;
-                border-radius: 100px;
-                background: $red;
-                color: $blue-dark;
-                transition: .6s ease;
-                opacity: 1;
-            }
-            &:hover {
-                transition: .6s ease;
-                &::after {
-                    content: 'Francisco Junior';
-                    text-align: center;
-                    display: block;
-                    width: 140px;
-                    height: 30px;
-                    padding: 4px 0;
-                    border-radius: 100px;
-                    background: $red;
-                    color: $blue-dark;
-                    transition: .6s ease;
-                    opacity: 1;
-                }
-            }
-        }
-        .user5 {
-            position: absolute;
-            top: 280px;
-            left: 580px;
-            transition: .6s ease;
-            &::after {
-                content: 'Gilberto Uchoa';
-                text-align: center;
-                display: block;
-                width: 140px;
-                height: 30px;
-                padding: 4px 0;
-                left: -50px;
+                left: -40px;
                 margin: -40px;
                 margin-top: 5px;
                 border-radius: 100px;
@@ -362,21 +301,237 @@
                 color: $blue-dark;
                 transition: .6s ease;
                 opacity: 1;
+                border: 1px solid $yellow-dark;
             }
             &:hover {
                 transition: .6s ease;
                 &::after {
-                    content: 'Gilberto Uchoa';
-                    text-align: center;
-                    display: block;
-                    width: 140px;
-                    height: 30px;
-                    padding: 4px 0;
-                    border-radius: 100px;
-                    background: $yellow;
-                    color: $blue-dark;
-                    transition: .6s ease;
-                    opacity: 1;
+                    background-color: $red;
+                    box-shadow: 0px 4px 55px rgba(219, 24, 38, 0.35), 0px 1.20588px 16.5809px rgba(219, 24, 38, 0.228056), 0px 0.500862px 6.88685px rgba(219, 24, 38, 0.175), 0px 0.181152px 2.49084px rgba(219, 24, 38, 0.121944);
+                }
+            }
+        }
+        .user5 {
+            max-width: 64px;
+            max-height: 64px;
+            position: absolute;
+            top: 280px;
+            left: 340px;
+            transition: .6s ease;
+            &::after {
+                content: 'Gilberto Uchoa';
+                text-align: center;
+                display: block;
+                width: 160px;
+                height: 30px;
+                padding: 4px 0;
+                left: -40px;
+                margin: -40px;
+                margin-top: 5px;
+                border-radius: 100px;
+                background: $yellow;
+                color: $blue-dark;
+                transition: .6s ease;
+                opacity: 1;
+                border: 1px solid $yellow-dark;
+            }
+            &:hover {
+                transition: .6s ease;
+                &::after {
+                    background-color: $red;
+                    box-shadow: 0px 4px 55px rgba(219, 24, 38, 0.35), 0px 1.20588px 16.5809px rgba(219, 24, 38, 0.228056), 0px 0.500862px 6.88685px rgba(219, 24, 38, 0.175), 0px 0.181152px 2.49084px rgba(219, 24, 38, 0.121944);
+                }
+            }
+        }
+        .user6 {
+            max-width: 64px;
+            max-height: 64px;
+            position: absolute;
+            top: 180px;
+            left: 500px;
+            transition: .6s ease;
+            &::after {
+                content: 'Jerônimo F. da Silva';
+                text-align: center;
+                display: block;
+                width: 160px;
+                height: 30px;
+                padding: 4px 0;
+                left: -40px;
+                margin: -40px;
+                margin-top: 5px;
+                border-radius: 100px;
+                background: $blue;
+                color: $blue-dark;
+                transition: .6s ease;
+                opacity: 1;
+                border: 1px solid $blue-dark;
+            }
+            &:hover {
+                transition: .6s ease;
+                &::after {
+                    background-color: $red;
+                    box-shadow: 0px 4px 55px rgba(219, 24, 38, 0.35), 0px 1.20588px 16.5809px rgba(219, 24, 38, 0.228056), 0px 0.500862px 6.88685px rgba(219, 24, 38, 0.175), 0px 0.181152px 2.49084px rgba(219, 24, 38, 0.121944);
+                }
+            }
+        }
+        .user7 {
+            max-width: 64px;
+            max-height: 64px;
+            position: absolute;
+            top: 35px;
+            left: -60px;
+            transition: .6s ease;
+            &::after {
+                content: 'Vandy Rodrigues';
+                text-align: center;
+                display: block;
+                width: 160px;
+                height: 30px;
+                padding: 4px 0;
+                left: -40px;
+                margin: -40px;
+                margin-top: 5px;
+                border-radius: 100px;
+                background: $blue;
+                color: $blue-dark;
+                transition: .6s ease;
+                opacity: 1;
+                border: 1px solid $blue-dark;
+            }
+            &:hover {
+                transition: .6s ease;
+                &::after {
+                    background-color: $red;
+                    box-shadow: 0px 4px 55px rgba(219, 24, 38, 0.35), 0px 1.20588px 16.5809px rgba(219, 24, 38, 0.228056), 0px 0.500862px 6.88685px rgba(219, 24, 38, 0.175), 0px 0.181152px 2.49084px rgba(219, 24, 38, 0.121944);
+                }
+            }
+        }
+        .user8 {
+            max-width: 64px;
+            max-height: 64px;
+            position: absolute;
+            top: 35px;
+            left: -60px;
+            transition: .6s ease;
+            &::after {
+                content: 'Victor Santana';
+                text-align: center;
+                display: block;
+                width: 160px;
+                height: 30px;
+                padding: 4px 0;
+                left: -40px;
+                margin: -40px;
+                margin-top: 5px;
+                border-radius: 100px;
+                background: $yellow;
+                color: $blue-dark;
+                transition: .6s ease;
+                opacity: 1;
+                border: 1px solid $yellow-dark;
+            }
+            &:hover {
+                transition: .6s ease;
+                &::after {
+                    background-color: $red;
+                    box-shadow: 0px 4px 55px rgba(219, 24, 38, 0.35), 0px 1.20588px 16.5809px rgba(219, 24, 38, 0.228056), 0px 0.500862px 6.88685px rgba(219, 24, 38, 0.175), 0px 0.181152px 2.49084px rgba(219, 24, 38, 0.121944);
+                }
+            }
+        }
+        .user9 {
+            max-width: 64px;
+            max-height: 64px;
+            position: absolute;
+            top: 435px;
+            left: 90px;
+            transition: .6s ease;
+            &::after {
+                content: 'Rodrigo L. Costa';
+                text-align: center;
+                display: block;
+                width: 160px;
+                height: 30px;
+                padding: 4px 0;
+                left: -40px;
+                margin: -40px;
+                margin-top: 5px;
+                border-radius: 100px;
+                background: $blue;
+                color: $blue-dark;
+                transition: .6s ease;
+                opacity: 1;
+                border: 1px solid $blue-dark;
+            }
+            &:hover {
+                transition: .6s ease;
+                &::after {
+                    background-color: $red;
+                    box-shadow: 0px 4px 55px rgba(219, 24, 38, 0.35), 0px 1.20588px 16.5809px rgba(219, 24, 38, 0.228056), 0px 0.500862px 6.88685px rgba(219, 24, 38, 0.175), 0px 0.181152px 2.49084px rgba(219, 24, 38, 0.121944);
+                }
+            }
+        }
+        .user10 {
+            max-width: 64px;
+            max-height: 64px;
+            position: absolute;
+            top: 215px;
+            left: 90px;
+            transition: .6s ease;
+            &::after {
+                content: 'Leandro Moreno';
+                text-align: center;
+                display: block;
+                width: 160px;
+                height: 30px;
+                padding: 4px 0;
+                left: -40px;
+                margin: -40px;
+                margin-top: 5px;
+                border-radius: 100px;
+                background: $blue;
+                color: $blue-dark;
+                transition: .6s ease;
+                opacity: 1;
+                border: 1px solid $blue-dark;
+            }
+            &:hover {
+                transition: .6s ease;
+                &::after {
+                    background-color: $red;
+                    box-shadow: 0px 4px 55px rgba(219, 24, 38, 0.35), 0px 1.20588px 16.5809px rgba(219, 24, 38, 0.228056), 0px 0.500862px 6.88685px rgba(219, 24, 38, 0.175), 0px 0.181152px 2.49084px rgba(219, 24, 38, 0.121944);
+                }
+            }
+        }
+        .user11 {
+            max-width: 64px;
+            max-height: 64px;
+            position: absolute;
+            top: 92px;
+            left: 280px;
+            transition: .6s ease;
+            &::after {
+                content: 'Fábio Borges';
+                text-align: center;
+                display: block;
+                width: 160px;
+                height: 30px;
+                padding: 4px 0;
+                left: -40px;
+                margin: -40px;
+                margin-top: 5px;
+                border-radius: 100px;
+                background: $blue;
+                color: $blue-dark;
+                transition: .6s ease;
+                opacity: 1;
+                border: 1px solid $blue-dark;
+            }
+            &:hover {
+                transition: .6s ease;
+                &::after {
+                    background-color: $red;
+                    box-shadow: 0px 4px 55px rgba(219, 24, 38, 0.35), 0px 1.20588px 16.5809px rgba(219, 24, 38, 0.228056), 0px 0.500862px 6.88685px rgba(219, 24, 38, 0.175), 0px 0.181152px 2.49084px rgba(219, 24, 38, 0.121944);
                 }
             }
         }

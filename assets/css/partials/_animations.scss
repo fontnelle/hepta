@@ -7,23 +7,22 @@
     0% {
         opacity: 0;
         stroke-width: .3;
-        stroke-dasharray: 5 1000;
         fill: transparent;
-        transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, 10px, 0);
     }
     25% {
-        opacity: 0.2;
+        opacity: 1;
         stroke-width: 1;
         stroke-dasharray: 100 0;
         fill: transparent;
-        transform: translate3d(0, -50px, 0);
+        transform: translate3d(0, 20px, 0);
     }
     60%,
     100% {
         stroke-width: 0.3;
         fill: #fafafa;
-        opacity: 1;
-        transform: translate3d(0, -0, 0);
+        opacity: 0;
+        transform: translate3d(0, 0px, 0);
     }
 }
 
@@ -40,7 +39,7 @@
         transform: translate3d(0, 10px, 0);
     }
     25% {
-        opacity: 0.2;
+        opacity: 1;
         stroke-width: 1;
         stroke-dasharray: 100 0;
         fill: transparent;
@@ -50,7 +49,7 @@
     100% {
         stroke-width: 0.3;
         fill: #fafafa;
-        opacity: 1;
+        opacity: 0;
         transform: translate3d(0, 0px, 0);
     }
 }
@@ -100,7 +99,12 @@
 .user4,
 .user5,
 .user6,
-.user {
+.user7,
+.user8,
+.user9,
+.user10,
+.user11,
+{
     animation: flutuar 6s ease-out infinite alternate;
 }
 
@@ -108,12 +112,12 @@
     margin-bottom: 32px;
     display: flex;
     width: 800px;
-    height: 85px;
+    height: 90px;
     color: #003241;
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 85px;
+    font-size: 80px;
     line-height: 85px;
     overflow: hidden;
     // border: 1px solid hotpink;
