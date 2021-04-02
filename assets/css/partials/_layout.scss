@@ -7,6 +7,11 @@
     height: 93vh;
     margin: 0 auto;
     padding: 36px 16px;
+    @include responsive() {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 460px;
+    }
 }
 
 .container-item-1 {
@@ -19,22 +24,50 @@
     p {
         margin-bottom: 32px;
     }
+    @include responsive() {
+        max-width: 100%;
+        h1 {
+            font-size: 30px;
+            line-height: 0;
+            width: 100%;
+            padding: 0;
+        }
+        .mouse {
+            display: none;
+        }
+    }
 }
 
 .container-item-2 {
-    z-index: 999;
     transition: .5s ease;
+    @include responsive() {
+        padding: 0 8px;
+        img {
+            width: 300px;
+            margin: 0 auto;
+        }
+    }
 }
 
 .elementos {
     position: absolute;
     left: 810px;
+    @include responsive() {
+        left: 19px;
+        width: 100%;
+        overflow: hidden;
+        z-index: -3;
+        opacity: .2;
+    }
 }
 
 .depoimentos {
     padding: 40px 40px;
     background: linear-gradient(108.62deg, #DFEEF0 3.54%, #E7F0F1 91.92%);
     margin-bottom: -160px;
+    @include responsive() {
+        padding: 0 4px;
+    }
 }
 
 .depoimentos-container {
@@ -44,12 +77,22 @@
     max-width: 1140px;
     margin: 0 auto;
     padding: 36px 16px;
+    @include responsive() {
+        padding: 12px 2px;
+        flex-direction: column;
+    }
 }
 
 .depoimentos-item-1 {
     display: flex;
     min-width: 580px;
     flex-direction: column;
+    @include responsive() {
+        padding: 16px 8px;
+        h2 {
+            margin-bottom: 16px;
+        }
+    }
 }
 
 .card {
@@ -63,6 +106,10 @@
     background: #FAFAFA;
     box-shadow: 0px 12px 148px rgba(0, 121, 133, 0.07), 0px 4.3802px 54.0224px rgba(0, 121, 133, 0.0482987), 0px 2.1265px 26.2269px rgba(0, 121, 133, 0.0389404), 0px 1.04245px 12.8569px rgba(0, 121, 133, 0.0310596), 0px 0.412187px 5.08364px rgba(0, 121, 133, 0.0217013);
     border-radius: 10px;
+    @include responsive() {
+        width: 315px;
+        margin: 8px 0;
+    }
 }
 
 .final {
@@ -146,6 +193,10 @@
     min-width: 740px;
     flex-direction: column;
     max-width: 576px;
+    @include responsive() {
+        z-index: 999;
+        padding: 0px 8px;
+    }
 }
 
 .video {
@@ -154,6 +205,9 @@
     padding: 40px 40px;
     background: #fafafa;
     position: relative;
+    @include responsive() {
+        padding: 20px 5px;
+    }
 }
 
 .video-container {
@@ -163,12 +217,59 @@
     padding-top: 80px;
     max-width: 1140px;
     margin: 0 auto;
+    @include responsive() {
+        flex-direction: column;
+        padding-top: 0;
+        padding: 0 8px;
+        height: 400px;
+    }
 }
 
 .video-item-1 {
     max-width: 480px;
     h2 {
         margin-bottom: 64px;
+    }
+    button {
+        display: none;
+        margin: 16px 0;
+        border-radius: 5px;
+        padding: 8px 16px;
+        border: none;
+        cursor: pointer;
+        background: $yellow;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: #fafafa;
+        transition: .6s ease;
+        &:hover {
+            transform: translate3d(0, -10px, 0);
+            box-shadow: 0px 47px 127px rgba(255, 196, 0, 0.11), 0px 19.6355px 53.0576px rgba(255, 196, 0, 0.079074), 0px 10.4981px 28.3671px rgba(255, 196, 0, 0.0655718), 0px 5.88513px 15.9024px rgba(255, 196, 0, 0.055), 0px 3.12555px 8.44563px rgba(255, 196, 0, 0.0444282), 0px 1.30061px 3.51442px rgba(255, 196, 0, 0.030926);
+        }
+        @include responsive() {
+            display: block;
+            z-index: 999;
+        }
+    }
+    @include responsive() {
+        margin-bottom: 16px;
+        width: 80%;
+        margin-top: 150px;
+        h2 {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.orbita {
+    @include responsive() {
+        position: relative;
+        left: -10px;
+        width: 50%;
+        opacity: .1;
+        z-index: -999;
     }
 }
 
@@ -177,12 +278,50 @@
     transform: translate3d(200px, -60px, 0);
     .orbita-elemento {
         position: absolute;
-        right: 110px;
+        right: 180px;
         top: -70px;
+        @include responsive() {
+            display: none;
+        }
     }
     .usuarios {
         position: absolute;
         z-index: 999;
+        @include responsive() {
+            display: none;
+        }
+        .user0 {
+            max-width: 64px;
+            max-height: 64px;
+            position: absolute;
+            top: 470px;
+            left: 275px;
+            transition: .6s ease;
+            &::after {
+                content: 'Vandy Rodrigues';
+                text-align: center;
+                display: block;
+                width: 140px;
+                height: 30px;
+                padding: 4px 0;
+                left: -50px;
+                margin: -40px;
+                margin-top: 5px;
+                border-radius: 100px;
+                background: $yellow;
+                color: $blue-dark;
+                transition: .6s ease;
+                opacity: 1;
+                border: 1px solid $yellow-dark;
+            }
+            &:hover {
+                transition: .6s ease;
+                &::after {
+                    background-color: $red;
+                    box-shadow: 0px 4px 55px rgba(219, 24, 38, 0.35), 0px 1.20588px 16.5809px rgba(219, 24, 38, 0.228056), 0px 0.500862px 6.88685px rgba(219, 24, 38, 0.175), 0px 0.181152px 2.49084px rgba(219, 24, 38, 0.121944);
+                }
+            }
+        }
         .user1 {
             max-width: 64px;
             max-height: 64px;
@@ -544,14 +683,20 @@
     align-items: flex-end;
     padding: 40px 40px;
     background: #fafafa;
+    @include responsive() {
+        padding: 8px 8px;
+    }
 }
 
 .jeitohepta-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1440px;
+    max-width: 1140px;
     margin: 0 auto;
+    @include responsive() {
+        flex-direction: column;
+    }
 }
 
 .jeitohepta-item-1 {
@@ -559,10 +704,17 @@
     .mulher {
         transform: translate3d(-380px, 0, 0);
     }
+    @include responsive() {
+        transform: translate3d(-175px, 0, 0);
+        margin-bottom: 32px;
+    }
 }
 
 .jeitohepta-item-2 {
     width: 650px;
+    @include responsive() {
+        width: 50%;
+    }
     transform: translate3d(-100px, 0, 0);
     span {
         background: rgba($blue, 0.1);
@@ -580,6 +732,9 @@
     }
     p {
         margin-bottom: 64px;
+        @include responsive() {
+            margin-bottom: 32px;
+        }
     }
     button {
         margin: 0;
@@ -599,6 +754,10 @@
             transform: translate3d(0, -10px, 0);
             box-shadow: 0px 17px 29px rgba(219, 24, 38, 0.47), 0px 2.12866px 3.63125px rgba(219, 24, 38, 0.235);
         }
+        @include responsive() {
+            font-size: 18px;
+            padding: 8px 16px;
+        }
     }
 }
 
@@ -608,6 +767,9 @@
     align-items: flex-end;
     padding: 40px 40px;
     background: #fafafa;
+    @include responsive() {
+        padding: 8px 8px;
+    }
 }
 
 .footer-container {
@@ -616,6 +778,10 @@
     justify-content: space-between;
     max-width: 1440px;
     margin: 0 auto;
+    @include responsive() {
+        width: 100%;
+        padding: 8px 0;
+    }
 }
 
 .footer-item {
@@ -627,6 +793,13 @@
     align-items: center;
     background: $blue;
     border-radius: 100px;
+    @include responsive() {
+        width: 100%;
+        padding: 8px 8px;
+        flex-direction: column;
+        border-radius: 4px;
+        justify-content: center;
+    }
     p {
         font-family: 'Source Sans Pro', sans-serif;
         font-style: normal;
@@ -634,6 +807,10 @@
         font-size: 16px;
         line-height: 32px;
         color: #FAFAFA;
+        @include responsive() {
+            text-align: center;
+            margin-top: 16px;
+        }
         a {
             font-family: 'Source Sans Pro', sans-serif;
             font-style: normal;

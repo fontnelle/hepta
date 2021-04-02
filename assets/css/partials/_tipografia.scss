@@ -19,6 +19,10 @@ h2 {
     font-size: 36px;
     line-height: 48px;
     color: #003241;
+    @include responsive() {
+        font-size: 24px;
+        line-height: 30px;
+    }
 }
 
 p {
@@ -28,6 +32,10 @@ p {
     font-size: 24px;
     line-height: 32px;
     color: $blue-dark;
+    @include responsive() {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 .depoimento {
