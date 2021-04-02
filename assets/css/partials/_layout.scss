@@ -1,3 +1,17 @@
+.bg-loader {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(225deg, $blue 0%, $blue-dark 100%);
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -11,6 +25,9 @@
         flex-direction: column;
         justify-content: flex-start;
         height: 460px;
+        .elementos {
+            display: none;
+        }
     }
 }
 
@@ -251,14 +268,20 @@
         @include responsive() {
             display: block;
             z-index: 999;
+            position: relative;
         }
     }
     @include responsive() {
         margin-bottom: 16px;
-        width: 80%;
+        width: 96%;
         margin-top: 150px;
         h2 {
             margin-bottom: 16px;
+        }
+        @include responsive() {
+            button {
+                width: 100%;
+            }
         }
     }
 }
@@ -692,20 +715,25 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     max-width: 1140px;
     margin: 0 auto;
     @include responsive() {
         flex-direction: column;
+        margin-top: 60px;
+        padding: 0 16px;
+        max-width: 100%;
     }
 }
 
 .jeitohepta-item-1 {
-    width: 700px;
+    width: 600px;
     .mulher {
         transform: translate3d(-380px, 0, 0);
     }
     @include responsive() {
-        transform: translate3d(-175px, 0, 0);
+        transform: translate3d(26px, 5px, 0);
+        flex-direction: column;
         margin-bottom: 32px;
     }
 }
@@ -713,7 +741,10 @@
 .jeitohepta-item-2 {
     width: 650px;
     @include responsive() {
-        width: 50%;
+        width: 98%;
+        button {
+            width: 100%;
+        }
     }
     transform: translate3d(-100px, 0, 0);
     span {
@@ -839,18 +870,4 @@
             }
         }
     }
-}
-
-.bg-loader {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(225deg, $blue 0%, $blue-dark 100%);
 }
