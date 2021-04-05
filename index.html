@@ -17,7 +17,7 @@
 
 
     <!-- LOAD -->
-    <section class="bg-loader">
+    <!-- <section class="bg-loader">
         <svg width="296" height="209" viewBox="0 0 296 209" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="logo-animada" id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M2.10754 195.343H141.864V152.402H69.022V151.085C90.3609 131.941 104.279 118.944 110.778 112.095C117.364 105.245 122.633 98.7472 126.584 92.6002C130.536 86.3654 133.434 80.0427 135.278 73.6323C137.21 67.2219 138.176 60.2406 138.176 52.6886C138.176 42.5899 135.454 33.5012 130.009 25.4222C124.652 17.2555 117.056 10.9768 107.221 6.58607C97.4739 2.19536 86.3654 0 73.8957 0C63.9727 0 55.0157 1.00986 47.0246 3.02959C39.1213 5.04932 31.7888 7.9911 25.0271 11.8549C18.2654 15.6309 9.92302 21.9536 0 30.8228L28.5836 64.2801C36.399 57.5184 43.3803 52.4251 49.5273 49.0004C55.7621 45.4878 61.9091 43.7315 67.9683 43.7315C73.8518 43.7315 78.4182 45.1805 81.6673 48.0783C84.9164 50.9762 86.541 54.9278 86.541 59.9333C86.541 63.9727 85.7068 67.8366 84.0383 71.5248C82.4576 75.213 79.6037 79.6476 75.4764 84.8286C71.3491 89.9219 62.5677 99.4936 49.1321 113.544L2.10754 161.095V195.343ZM271.241 183.421C287.487 166.561 295.61 139.295 295.61 101.622C295.61 72.8193 289.155 50.6023 276.247 34.9713C263.338 19.3404 245.116 11.5249 221.582 11.5249C200.419 11.5249 183.734 17.5841 171.528 29.7025C159.41 41.8208 153.35 58.5495 153.35 79.8883C153.35 99.4709 158.049 114.838 167.445 125.991C176.841 137.143 189.881 142.719 206.566 142.719C213.767 142.719 219.782 141.973 224.612 140.48C229.442 138.987 233.525 136.836 236.862 134.026C240.199 131.216 243.58 126.649 247.004 120.327H248.585C247.707 136.924 242.219 149.086 232.12 156.814C222.021 164.454 207.664 168.273 189.047 168.273C181.495 168.273 173.943 167.571 166.391 166.166V207.395C172.538 208.273 181.495 208.712 193.262 208.712C229.002 208.712 254.996 200.282 271.241 183.421ZM209.069 59.3398C212.669 55.2125 217.323 53.1489 223.031 53.1489C229.002 53.1489 233.92 55.9589 237.784 61.5791C241.736 67.1992 243.711 73.917 243.711 81.7324C243.711 87.5282 241.604 92.4897 237.389 96.617C233.174 100.744 228.212 102.808 222.504 102.808C216.182 102.808 211.484 100.7 208.41 96.4852C205.337 92.1823 203.8 86.4305 203.8 79.2297C203.8 70.097 205.556 63.4671 209.069 59.3398Z" fill="url(#paint0_linear)"/>
             <defs>
@@ -37,23 +37,46 @@
             </linearGradient>
             </defs>
             </svg>
-    </section>
+    </section> -->
 
     <!--======== HEADER ===========-->
-    <header>
-        <nav class="navbar">
-            <div class="nav-menu">
-                <div class="logo">
-                    <a href=""><img style="max-width: 170px;" src="assets/img/logo-hepta.svg" onload="SVGInject(this)" /></a>
-                </div>
+    <header id="header">
+
+        <!-- NAVBAR MOBILE -->
+        <nav class="navbar-mobile">
+            <div class="logo">
+                <img src="assets/img/logo-hepta.svg" onload="SVGInject(this)" />
             </div>
-            <div class="nav-social">
-                <ul class="nav-list">
-                    <li><a href="#comentarios" class="nav-link ani1">Comentários</a></li>
-                    <li><a href="#depoimentos" class="nav-link ani2">Depoimentos</a></li>
-                    <li><a href="#jeitohepta" class="nav-link ani3">Jeito Hepta</a></li>
-                    <li><a href="https://mailchi.mp/4fb91a85a517/contato-hepta" class="btn-ca ani4">Vamos Conversar?</a></li>
+            <div>
+                <img src="assets/img/icon-instagram.svg" onload="SVGInject(this)" />
+                <img src="assets/img/icon-facebook.svg" onload="SVGInject(this)" />
+                <img src="assets/img/icon-linkedin.svg" onload="SVGInject(this)" />
+            </div>
+        </nav>
+
+
+        <!-- NAVBAR DESKTOP -->
+        <nav class="navbar-desktop">
+            <div class="navbar-desktop-item-1">
+                <div class="logo">
+
+                    <img src="assets/img/logo-hepta.svg" onload="SVGInject(this)" />
+
+                </div>
+                <ul class="menu-desktop">
+                    <li class="menu-item">
+                        <a href="" class="nav-link-desktop">Comentários</a>
+                        <a href="" class="nav-link-desktop">Depoimentos</a>
+                        <a href="" class="nav-link-desktop">Jeito Hepta</a>
+                    </li>
                 </ul>
+            </div>
+            <div class="navbar-desktop-item-2">
+                <a href="" class="btn">Vamos conversar?</a>
+
+            </div>
+
+            <div class="navbar-desktop-item-3">
                 <div class="ani5">
                     <a href="https://www.instagram.com/heptatecnologia/"><img src="assets/img/icon-instagram.svg" onload="SVGInject(this)" /></a>
                     <a href="https://www.facebook.com/heptatecnologia/"><img src="assets/img/icon-facebook.svg" onload="SVGInject(this)" /></a>
@@ -62,11 +85,12 @@
             </div>
         </nav>
 
-        <!--======== CONTAINER ===========-->
-        <section class="container">
-            <div class="container-item-1 ani6">
-                <h1>29 anos de</h1>
+    </header>
 
+    <section class="full-container">
+        <section class="container hero">
+            <div class="flex-item-2 py-4">
+                <h1>29 anos</h1>
                 <div class="contenedor">
                     <ul>
                         <li>soluções</li>
@@ -74,262 +98,211 @@
                         <li>capital humano</li>
                     </ul>
                 </div>
-
                 <p>Muitas pessoas fizeram parte, de alguma forma, dessa história. Esse espaço reúne um pouco do que elas têm pra contar. </p>
-                <img class="mouse" src="assets/img/mouse.svg" onload="SVGInject(this)" />
 
             </div>
-
-            <div class="elementos ani8">
-                <img src="assets/img/elementos.svg" onload="SVGInject(this)" />
-            </div>
-
-            <div class="container-item-2">
+            <div class="flex-item-1">
                 <div class="js-tilt ani7">
                     <img src="assets/img/29-anos.png" alt="Hepta 29 anos">
                 </div>
             </div>
         </section>
+    </section>
 
-    </header>
 
-    <!-- DEPOIMENTOS EM TEXTO -->
-    <section id="comentarios" class="depoimentos">
-        <div class="depoimentos-container">
-            <div class="depoimentos-item-1">
-                <h6 data-aos="fade-up">Depoimentos</h6>
-                <h2 data-aos="fade-up">O que ouvimos ao <br>longo dos anos</h2>
 
-                <!-- 1 CARD DEPOIMENTO    -->
-                <div data-aos="fade-right" data-aos-duration="2000" class="card">
-                    <div class="card-text">
-                        <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
-                        <p class="depoimento">Sou muito grata a Deus é a empresa Hepta pelo apoio 👏 Meu crescimento no esporte se deve ao seu apoio e as oportunidades que a empresa vem me proporcionando! 🙏 Tenho maior orgulho de carregar o nome da empresa no meu ❤️❤️❤️❤️</p>
+    <!-- DEPOIMENTO REDES SOCIAIS -->
+
+    <section class="container">
+        <div class="flex-item-1">
+            <h6 data-aos="fade-up">Depoimentos</h6>
+            <h2 data-aos="fade-up">O que ouvimos ao <br>longo dos anos</h2>
+            <!-- 1 CARD DEPOIMENTO    -->
+            <div data-aos="fade-right" data-aos-duration="2000" class="card">
+                <div class="card-text">
+                    <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
+                    <p class="depoimento">Sou muito grata a Deus é a empresa Hepta pelo apoio 👏 Meu crescimento no esporte se deve ao seu apoio e as oportunidades que a empresa vem me proporcionando! 🙏 Tenho maior orgulho de carregar o nome da empresa no meu ❤️❤️❤️❤️</p>
+                </div>
+                <div class="card-footer">
+                    <div class="foto">
+                        <img src="assets/img/andressa.png" alt="Andressa Campeão Tipo Esporte">
                     </div>
-                    <div class="card-footer">
-                        <div class="foto">
-                            <img src="assets/img/andressa.png" alt="Andressa Campeão Tipo Esporte">
-                        </div>
-                        <div class="nome">
-                            <h5>Andressa Sousa</h5>
-                            <span>Campeã de Tiro Esportivo</span>
-                        </div>
-                    </div>
-                    <div class="card-link">
-                        <img src="assets/img/icon-instagram.svg" onload="SVGInject(this)" />
-                        <p><a href="https://www.instagram.com/p/CIyyIsOMFy-/">ver depoimento</a></p>
+                    <div class="nome">
+                        <h5>Andressa Sousa</h5>
+                        <span>Campeã de Tiro Esportivo</span>
                     </div>
                 </div>
-
-                <!-- 2 CARD DEPOIMENTO -->
-                <div data-aos="fade-right" data-aos-duration="2000" class="card">
-                    <div class="card-text">
-                        <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
-                        <p class="depoimento">Obrigado por me acolherem tão bem @heptatecnologia, vocês são incríveis! Muito feliz por faer parte dessa família ❤️ #valoreshepta #jeitohepta</p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="foto">
-                            <img src="assets/img/hellan.png" alt="Andressa Campeão Tipo Esporte">
-                        </div>
-                        <div class="nome">
-                            <h5>Hellan Rodrigues</h5>
-                            <span>Time Hepta</span>
-                        </div>
-                    </div>
-                    <div class="card-link">
-                        <img src="assets/img/icon-instagram.svg" onload="SVGInject(this)" />
-                        <p><a href="https://www.instagram.com/p/CBLWQgoluua/">ver depoimento</a></p>
-                    </div>
-                </div>
-
-                <!-- 3 CARD DEPOIMENTO -->
-                <div data-aos="fade-right" data-aos-duration="2000" class="card final">
-                    <div class="card-text">
-                        <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
-                        <p class="depoimento">#JeitoHepta estimulando a cooperção, o diálogo propositivo e as relações interpsessoais.
-                            <br> <br> <b>#Valores</b> <b>#ValoresHepta</b> <b>#sementemagica</b> <b>#colobaração</b></p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="foto">
-                            <img src="assets/img/miqueias.png" alt="Andressa Campeão Tipo Esporte">
-                        </div>
-                        <div class="nome">
-                            <h5>Miquéias de Morais</h5>
-                            <span>Graduado em TI</span>
-                        </div>
-                    </div>
-                    <div class="card-link">
-                        <img src="assets/img/icon-instagram.svg" onload="SVGInject(this)" />
-                        <p><a href="https://www.instagram.com/p/B5YxdVTpFMx/">ver depoimento</a></p>
-                    </div>
+                <div class="card-link">
+                    <img src="assets/img/icon-instagram.svg" onload="SVGInject(this)" />
+                    <p><a href="https://www.instagram.com/p/CIyyIsOMFy-/">ver depoimento</a></p>
                 </div>
             </div>
-
-            <!-- COLUNA DA DIREITA -->
-            <div class="depoimentos-item-2">
-                <div data-aos="fade-left" data-aos-duration="1000" class="card">
-                    <div class="card-text">
-                        <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
-                        <p class="depoimento">Empresa que presta ótimo serviço. Possui uma visão de negócios única. Recomendo a qualquer um que me perguntar!</p>
+            <!-- 2 CARD DEPOIMENTO -->
+            <div data-aos="fade-right" data-aos-duration="2000" class="card">
+                <div class="card-text">
+                    <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
+                    <p class="depoimento">Obrigado por me acolherem tão bem @heptatecnologia, vocês são incríveis! Muito feliz por faer parte dessa família ❤️ #valoreshepta #jeitohepta</p>
+                </div>
+                <div class="card-footer">
+                    <div class="foto">
+                        <img src="assets/img/hellan.png" alt="Andressa Campeão Tipo Esporte">
                     </div>
-                    <div class="card-footer">
-                        <div class="foto">
-                            <img src="assets/img/felipe.png" alt="Andressa Campeão Tipo Esporte">
-                        </div>
-                        <div class="nome">
-                            <h5>Felipe T. Lima</h5>
-                            <!-- <span>Campeã de Tiro Esportivo</span> -->
-                        </div>
-                    </div>
-                    <div class="card-link">
-                        <img src="assets/img/icon-google.svg" onload="SVGInject(this)" />
-                        <p><a href="https://cutt.ly/OcaK4vs">VER DEPOIMENTO</a></p>
+                    <div class="nome">
+                        <h5>Hellan Rodrigues</h5>
+                        <span>Time Hepta</span>
                     </div>
                 </div>
-
-                <div data-aos="fade-left" data-aos-duration="1000" class="card">
-                    <div class="card-text">
-                        <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
-                        <p class="depoimento">Vocês conhecem pessoas que esperam o final do dia de uma sexta-feira para serem felizes? Pois é, nós da Hepta somos felizes de segunda a segunda, afinal, a vida acontece diariamente e a felicidade é uma escolha e, este jeito de
-                            pensar e viver a vida, você encontra aqui no #JeitoHepta!</p>
+                <div class="card-link">
+                    <img src="assets/img/icon-instagram.svg" onload="SVGInject(this)" />
+                    <p><a href="https://www.instagram.com/p/CBLWQgoluua/">ver depoimento</a></p>
+                </div>
+            </div>
+            <!-- 3 CARD DEPOIMENTO -->
+            <div data-aos="fade-right" data-aos-duration="2000" class="card final">
+                <div class="card-text">
+                    <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
+                    <p class="depoimento">#JeitoHepta estimulando a cooperção, o diálogo propositivo e as relações interpsessoais.
+                        <br> <br> <b>#Valores</b> <b>#ValoresHepta</b> <b>#sementemagica</b> <b>#colobaração</b></p>
+                </div>
+                <div class="card-footer">
+                    <div class="foto">
+                        <img src="assets/img/miqueias.png" alt="Andressa Campeão Tipo Esporte">
                     </div>
-                    <div class="card-footer">
-                        <div class="foto">
-                            <img src="assets/img/silvia.png" alt="Andressa Campeão Tipo Esporte">
-                        </div>
-                        <div class="nome">
-                            <h5>Sílvia Küster</h5>
-                            <span>Gerente de Desenvolvimento de Pessoas</span>
-                        </div>
-                    </div>
-                    <div class="card-link">
-                        <img src="assets/img/icon-instagram.svg" onload="SVGInject(this)" />
-                        <p><a href="https://www.facebook.com/silvia.kuster.5/posts/3097500860337529">ver depoimento</a></p>
+                    <div class="nome">
+                        <h5>Miquéias de Morais</h5>
+                        <span>Graduado em TI</span>
                     </div>
                 </div>
+                <div class="card-link">
+                    <img src="assets/img/icon-instagram.svg" onload="SVGInject(this)" />
+                    <p><a href="https://www.instagram.com/p/B5YxdVTpFMx/">ver depoimento</a></p>
+                </div>
+            </div>
+        </div>
 
-                <div data-aos="fade-left" data-aos-duration="1000" class="card">
-                    <div class="card-text">
-                        <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
-                        <p class="depoimento">Ótima empresa, com foco na qualidade!
-                        </p>
+        </div>
+        <div class="flex-item-1">
+            <!-- coluna da direita -->
+
+            <!-- 4 CARD DEPOIMENTO -->
+            <div class="card" data-aos="fade-left" data-aos-duration="1000">
+                <div class="card-text">
+                    <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
+                    <p class="depoimento">Empresa que presta ótimo serviço. Possui uma visão de negócios única. Recomendo a qualquer um que me perguntar!</p>
+                </div>
+                <div class="card-footer">
+                    <div class="foto">
+                        <img src="assets/img/felipe.png" alt="Andressa Campeão Tipo Esporte">
                     </div>
-                    <div class="card-footer">
-                        <div class="foto">
-                            <img src="assets/img/marlucio.png" alt="Andressa Campeão Tipo Esporte">
-                        </div>
-                        <div class="nome">
-                            <h5>Marlúcio Barbosa</h5>
-                            <!-- <span>Campeã de Tiro Esportivo</span> -->
-                        </div>
+                    <div class="nome">
+                        <h5>Felipe T. Lima</h5>
+                        <!-- <span>Campeã de Tiro Esportivo</span> -->
                     </div>
-                    <div class="card-link">
-                        <img src="assets/img/icon-google.svg" onload="SVGInject(this)" />
-                        <p><a href="https://cutt.ly/OcaK4vs">VER DEPOIMENTO</a></p>
+                </div>
+                <div class="card-link">
+                    <img src="assets/img/icon-google.svg" onload="SVGInject(this)" />
+                    <p><a href="https://cutt.ly/OcaK4vs">VER DEPOIMENTO</a></p>
+                </div>
+            </div>
+            <!-- 5 CARD DEPOIMENTO -->
+            <div class="card" data-aos="fade-left" data-aos-duration="1000">
+                <div class="card-text">
+                    <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
+                    <p class="depoimento">Vocês conhecem pessoas que esperam o final do dia de uma sexta-feira para serem felizes? Pois é, nós da Hepta somos felizes de segunda a segunda, afinal, a vida acontece diariamente e a felicidade é uma escolha e, este jeito de pensar
+                        e viver a vida, você encontra aqui no #JeitoHepta!</p>
+                </div>
+                <div class="card-footer">
+                    <div class="foto">
+                        <img src="assets/img/silvia.png" alt="Andressa Campeão Tipo Esporte">
                     </div>
+                    <div class="nome">
+                        <h5>Sílvia Küster</h5>
+                        <span>Gerente de Desenvolvimento de Pessoas</span>
+                    </div>
+                </div>
+                <div class="card-link">
+                    <img src="assets/img/icon-instagram.svg" onload="SVGInject(this)" />
+                    <p><a href="https://www.facebook.com/silvia.kuster.5/posts/3097500860337529">ver depoimento</a></p>
+                </div>
+            </div>
+            <!-- 6 CARD DEPOIMENTO -->
+            <div class="card" data-aos="fade-left" data-aos-duration="1000">
+                <div class="card-text">
+                    <img src="assets/img/aspas.svg" onload="SVGInject(this)" />
+                    <p class="depoimento">Ótima empresa, com foco na qualidade!
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <div class="foto">
+                        <img src="assets/img/marlucio.png" alt="Andressa Campeão Tipo Esporte">
+                    </div>
+                    <div class="nome">
+                        <h5>Marlúcio Barbosa</h5>
+                        <!-- <span>Campeã de Tiro Esportivo</span> -->
+                    </div>
+                </div>
+                <div class="card-link">
+                    <img src="assets/img/icon-google.svg" onload="SVGInject(this)" />
+                    <p><a href="https://cutt.ly/OcaK4vs">VER DEPOIMENTO</a></p>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section id="depoimentos" class="video">
-        <div class="video-container">
-            <div class="video-item-1">
-                <h6 data-aos="fade-up" data-aos-delay="100">Depoimentos</h6>
-                <h2 data-aos="fade-up" data-aos-delay="200">O que as pessoas<br> têm a dizer?</h2>
-                <p data-aos="fade-up" data-aos-delay="300">Não é todo dia, nem é toda empresa que completa 29 anos e a Hepta alcançou esse marco em 2021. São quase 30 anos de história e, mais do que falar sobre dados e fatos, queremos ouvir as pessoas e o que elas têm a dizer sobre sua experiência
-                    conosco.
-                </p>
-                <a href="https://www.youtube.com/watch?v=8hai_g90IGg?&autoplay=1"><button> Assistir todos os vídeos </button></a>
-            </div>
+    <section class="container">
+        <div class="flex-item-1">
+            <h6 class="mb-1" data-aos="fade-up" data-aos-delay="100">Depoimentos</h6>
+            <h2 class="mb-3" data-aos="fade-up" data-aos-delay="200">O que as pessoas<br> têm a dizer?</h2>
+            <p data-aos="fade-up" data-aos-delay="300">Não é todo dia, nem é toda empresa que completa 29 anos e a Hepta alcançou esse marco em 2021. São quase 30 anos de história e, mais do que falar sobre dados e fatos, queremos ouvir as pessoas e o que elas têm a dizer sobre sua experiência
+                conosco.
+            </p>
+        </div>
+        <div class="flex-item-2">
+            <img class="orbita-nova" src="assets/img/orbita-nova.svg" onload="SVGInject(this)" />
 
-
-
-            <div class="video-item-2">
-                <div data-aos="fade-down" data-aos-delay="300" class="orbita-elemento">
-                    <img src="assets/img/elementos-depoimento.svg" onload="SVGInject(this)" />
-                </div>
-                <div data-aos="fade-down" data-aos-delay="600" class="usuarios">
-                    <div class="user0">
-                        <a href="https://www.youtube.com/watch?v=l8c7jGCbgqA&list=PLGlBGPJTZQI-RzII4mCNW9xyeeBKxsvxR&index=7" data-fancybox><img src="assets/img/masculino-amarelo.svg" onload="SVGInject(this)" /></a>
-                    </div>
-
-                    <div class="user1">
-                        <a href="https://youtu.be/W-r22T3sZH8" data-fancybox><img src="assets/img/masculino-verde.svg" onload="SVGInject(this)" /></a>
-                    </div>
-
-                    <div class="user2">
-                        <a href="https://www.youtube.com/watch?v=8hai_g90IGg?&autoplay=1" data-fancybox><img src="assets/img/masculino-amarelo.svg" onload="SVGInject(this)" /></a>
-                    </div>
-
-                    <div class="user3">
-                        <a href="https://www.youtube.com/watch?v=ZTysn3J9WRw&list=PLGlBGPJTZQI-RzII4mCNW9xyeeBKxsvxR&index=3" data-fancybox><img src="assets/img/masculino-verde.svg" onload="SVGInject(this)" /></a>
-                    </div>
-
-                    <div class="user4">
-                        <a href="https://www.youtube.com/watch?v=6zIYIgevTOs&list=PLGlBGPJTZQI-RzII4mCNW9xyeeBKxsvxR&index=4" data-fancybox><img src="assets/img/masculino-amarelo.svg" onload="SVGInject(this)" /></a>
-                    </div>
-
-                    <div class="user5">
-                        <a href="https://www.youtube.com/watch?v=EmSLSJqNL50&list=PLGlBGPJTZQI-RzII4mCNW9xyeeBKxsvxR&index=5" data-fancybox><img src="assets/img/masculino-amarelo.svg" onload="SVGInject(this)" /></a>
-                    </div>
-                    <div class="user6">
-                        <a href="https://www.youtube.com/watch?v=lbLGu2Ffy58&list=PLGlBGPJTZQI-RzII4mCNW9xyeeBKxsvxR&index=6" data-fancybox><img src="assets/img/masculino-verde.svg" onload="SVGInject(this)" /></a>
-                    </div>
-                    <div class="user7">
-                        <a href="https://www.youtube.com/watch?v=l8c7jGCbgqA&list=PLGlBGPJTZQI-RzII4mCNW9xyeeBKxsvxR&index=7" data-fancybox><img src="assets/img/masculino-verde.svg" onload="SVGInject(this)" /></a>
-                    </div>
-
-                    <div class="user8">
-                        <a href="https://www.youtube.com/watch?v=XO9fm4TY1SM&list=PLGlBGPJTZQI-RzII4mCNW9xyeeBKxsvxR&index=8" data-fancybox><img src="assets/img/masculino-amarelo.svg" onload="SVGInject(this)" /></a>
-                    </div>
-
-                    <div class="user9">
-                        <a href="https://www.youtube.com/watch?v=NgnLeYh1fnw&list=PLGlBGPJTZQI-RzII4mCNW9xyeeBKxsvxR&index=9" data-fancybox><img src="assets/img/masculino-verde.svg" onload="SVGInject(this)" /></a>
-                    </div>
-
-                    <div class="user10">
-                        <a href="https://www.youtube.com/watch?v=IrkorXWOtvc&list=PLGlBGPJTZQI-RzII4mCNW9xyeeBKxsvxR&index=10" data-fancybox><img src="assets/img/masculino-verde.svg" onload="SVGInject(this)" /></a>
-                    </div>
-
-                    <div class="user11">
-                        <a href="https://www.youtube.com/watch?v=IrkorXWOtvc&list=PLGlBGPJTZQI-RzII4mCNW9xyeeBKxsvxR&index=11" data-fancybox><img src="assets/img/masculino-verde.svg" onload="SVGInject(this)" /></a>
-                    </div>
-
-
-                </div>
-                <img class="orbita" src="assets/img/orbita.svg" onload="SVGInject(this)" />
-
-            </div>
         </div>
     </section>
 
 
-    <section id="jeitohepta" class="jeitohepta">
-        <div data-aos="fade-up" data-aos-delay="200" class="jeitohepta-container">
-            <div class="jeitohepta-item-1">
-                <img class="mulher" src="assets/img/mulher.png" alt="mulher jeito hepta">
-            </div>
-            <div data-aos="fade-down" data-aos-delay="300" class="jeitohepta-item-2">
-                <span>#jeitohepta</span>
-                <h2>Queremos levar o #JeitoHepta <br> para todo o Brasil e o mundo!</h2>
-                <p>Mais do que prestar serviços de TI, nossa missão é entregar soluções que agreguem valor aos negócios de nossos clientes. Estamos há 29 anos no mercado: escutando e entendendo as necessidades das pessoas, e daí desenhamos soluções que façam
-                    sentido para elas.</p>
+
+
+    <section id="jeitohepta" class="container">
+        <div class="flex-item-1">
+            <img class="mulher" data-aos="fade-up" data-aos-delay="200" src="assets/img/mulher.png" alt="mulher jeito hepta">
+        </div>
+        <div class="flex-item-4 mt-2" data-aos="fade-down" data-aos-delay="300">
+            <span>#jeitohepta</span>
+            <h2>Queremos levar o #JeitoHepta <br> para todo o Brasil e o mundo!</h2>
+            <p>Mais do que prestar serviços de TI, nossa missão é entregar soluções que agreguem valor aos negócios de nossos clientes. Estamos há 29 anos no mercado: escutando e entendendo as necessidades das pessoas, e daí desenhamos soluções que façam
+                sentido para elas.</p>
+            <p>
                 <a href="https://mailchi.mp/4fb91a85a517/contato-hepta"> <button class="bnt-red">Vamos conversar?</button></a>
-            </div>
+            </p>
+        </div>
         </div>
     </section>
 
 
-    <section class="footer">
+    <section id="footer" class="container">
+        <div class="flex-item-1">
+            <img src="assets/img/logo-hepta-branca.svg" onload="SVGInject(this)" />
+            <p>Esta página está em conformidade com a LGPD | <a href="https://www.hepta.com.br/en/politica-de-privacidade">Política de Privacidade.</a></p>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- <section class="footer">
         <div class="footer-container">
             <div class="footer-item">
                 <img src="assets/img/logo-hepta-branca.svg" onload="SVGInject(this)" />
                 <p>Esta página está em conformidade com a LGPD | <a href="https://www.hepta.com.br/en/politica-de-privacidade">Política de Privacidade.</a></p>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <script src="assets/js/app.js"></script>
@@ -359,8 +332,6 @@
         }
     </script>
 
-
-
     <script>
         AOS.init();
     </script>
@@ -387,6 +358,9 @@
             });
         });
     </script>
+
+
+
 
 </body>
 
