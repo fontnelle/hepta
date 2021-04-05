@@ -29,6 +29,12 @@
 .anos-animado {
     opacity: 0;
     animation: anos-animado 10s ease infinite alternate;
+    @include responsive(s) {
+        svg {
+            width: 300px;
+            margin: 0 auto;
+        }
+    }
 }
 
 @keyframes anos-animado {

@@ -59,6 +59,22 @@ header {
     list-style: none;
 }
 
+.navbar-desktop-item-3 {
+    svg {
+        margin-right: 8px;
+        width: 24px;
+        cursor: pointer;
+        path {
+            transition: .6s ease;
+        }
+        &:hover {
+            path {
+                fill: $red;
+            }
+        }
+    }
+}
+
 .menu-desktop {
     display: flex;
     justify-content: flex-start;
