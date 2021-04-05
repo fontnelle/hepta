@@ -108,7 +108,6 @@ header {
     padding: 10px 24px;
     display: none;
     background: #FAFAFA;
-    border-bottom: 2px solid hotpink;
     @include responsive(s) {
         display: flex;
         justify-content: space-between;
