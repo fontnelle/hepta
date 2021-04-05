@@ -1,6 +1,6 @@
 .logo-animada {
     opacity: 0;
-    animation: numero-animado 8s ease infinite alternate;
+    animation: numero-animado 8s ease alternate;
 }
 
 @keyframes numero-animado {
@@ -28,7 +28,7 @@
 
 .anos-animado {
     opacity: 0;
-    animation: anos-animado 10s ease infinite alternate;
+    animation: anos-animado 10s ease alternate;
     @include responsive(s) {
         svg {
             width: 300px;
